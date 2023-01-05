@@ -1,0 +1,409 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Galano Grotesque", sans-serif;
+  background: #fbfbfb;
+}
+.container-fluid {
+  width: 90% !important;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*---===== Header Part ====----*/
+
+button {
+  border: none;
+  background: transparent;
+  outline: none;  
+}
+.ActiveButton{
+  background: #FEC85B;
+  box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+
+}
+button:focus {
+  outline: 0 auto -webkit-focus-ring-color !important;
+}
+.button-Effect {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.button-Effect:hover {
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+header {
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  z-index: 999;
+  margin-top: 50px;
+}
+header .navbar {
+  padding: 0 1rem;
+}
+header .navbar-light .navbar-nav .nav-link:focus,
+header .navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.92);
+}
+header .navbar-light .navbar-nav .active>.nav-link,
+header .navbar-light .navbar-nav .nav-link.active,
+header .navbar-light .navbar-nav .nav-link.show,
+header .navbar-light .navbar-nav .show>.nav-link {
+  color: rgba(255, 255, 255, 0.92);
+}
+header .navbar-nav .nav-link {
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+header .flexsocial .nav-link {
+  background: #f2eee5;
+  box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 12px 26px !important;
+  color: #10393b !important;
+}
+header .navbar-brand img {
+  vertical-align: middle;
+  border-style: none;
+  width: 119px;
+}
+header .navbar-nav {
+  width: 100%;
+}
+header .navbar-nav .nav-item {
+  margin: 0 10px;
+}
+header .navbar-nav .nav-item:last-child {
+  margin: 0 0 0 10px !important;
+}
+header .flexsocial li {
+  display: inline-flex;
+}
+header .navbar-nav .d-flexRight {
+  display: flex;
+  margin: 0 auto;
+}
+header .navbar-dark .navbar-nav .d-flexRight .nav-item {
+  display: flex;
+  align-items: center;
+  margin: 0 50px 0 0;
+}
+
+/*---===== Header Part ====----*/
+.sliderpart {
+  position: relative;
+  background: #133e44;
+  padding: 207px 0 106px;
+}
+.overlay_slider {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/sliderBg.png) no-repeat;
+  background-size: cover;
+}
+.sliderpart h1 {
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 106px;
+  letter-spacing: -0.462554px;
+  color: #ffffff;
+  margin: 0;
+}
+.sliderpart h1 span {
+  color: #ff915a;
+}
+.sliderpart p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.76);
+  width: 80%;
+  margin: 28px 0 45px;
+}
+.sliderpart .imgright {
+  width: 100%;
+}
+
+.sliderpart form .form-group {
+  margin-bottom: 28px;
+}
+.sliderpart form input {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 19px 28px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #5e797a;
+  border: none;
+  outline: none;
+  margin: 0 12px 0 0;
+  width: 54%;
+}
+.sliderpart form button {
+  padding: 20px 43px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.92);
+  border: none;
+}
+.sliderpart form label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.76);
+  margin: 0;
+}
+.sliderpart .col-md-5 {
+  max-width: 45%;
+  flex: 0 0 45%;
+}
+.sliderpart .col-md-7 {
+  max-width: 55%;
+  flex: 0 0 55%;
+}
+@media (max-width: 1728px) {
+.sliderpart .col-md-5 {max-width: 50%; flex: 0 0 50%;}
+.sliderpart .col-md-7 {max-width: 50%; flex: 0 0 50%;}
+}
+@media (max-width: 1440px) {
+.sliderpart .col-md-5 {max-width: 55%; flex: 0 0 55%; }
+.sliderpart .col-md-7 {max-width: 45%; flex: 0 0 45%;}
+}
+
+@media (max-width: 1366px) {
+.sliderpart h1 { font-size: 86px;  }
+.sliderpart form button {padding: 20px 40px;}
+.sliderpart form input {width: 52%;}
+}
+
+/***----=== Client Part ====----***/
+.clientprt {
+  width: 100%;
+  padding: 72px 0 79px;
+}
+.clientprt p {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #0f393b;
+  margin: 0 0 45px;
+}
+.clientprt img {
+  width: 100%;
+}
+/***----=== Client Part ====----***/
+
+/***----=== Feature Slider Part ====----***/
+.featureSlider{
+  width: 100%;
+  margin:0 0 70px;
+}
+.featureSlider .slidehead {
+  text-align: center;
+}
+.featureSlider .slidehead h1{
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -0.462554px;
+  color: #10393B;
+  margin: 0 0 29px;
+}
+.featureSlider .slidehead p{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #68807F;
+  margin: 0 0 40px;
+}
+.sliderdiv {
+  width: 100%;
+  padding: 0 15px;
+}
+.sliderdiv .slideDesign{
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 35px 64px;
+  text-align: center;
+}
+.sliderdiv .slideDesign h2{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 31px;
+  letter-spacing: -0.462554px;
+  color: #10393B;
+  margin: 34px 0 0;
+}
+/***----=== Feature Slider Part ====----***/
+
+/***----=== CusServis Part ====----***/
+.cusServis {
+  width: 100%;
+  margin: 69px 0 175px;
+  display: inline-block;
+}
+.cusServis .cusmargi97{
+  margin-top: 97px;
+}
+.cusServis .imgwidth{
+  width: 100%;
+}
+.cusServis .cusServisDetsils h2{
+  font-weight: 600;
+  font-size: 64px;
+  line-height:70px;
+  letter-spacing: -0.462554px;
+  color: #10393B;
+  margin: 0 0 29px;
+}
+.cusServis .cusServisDetsils p{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #68807F;
+  margin: 0 0 46px;
+}
+.cusServis .cusServisDetsils ul{
+  margin: 0 0;
+  padding: 0;
+}
+.cusServis .cusServisDetsils ul li{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #68807F;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0 0 39px;
+}
+.cusServis .cusServisDetsils ul li img{
+  margin: 0 16px 0 0;
+}
+.cusServis .cusServisDetsils button{  
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.92);
+  padding: 20px 42px;
+  margin-top: 11px;
+}
+.serlogoul li img{
+  margin: 0 50px 80px 0 !important;
+}
+.serlogoul li {
+  display: initial !important;
+}
+/***----=== CusServis Part ====----***/
+
+/***----=== Training Support Part ====----***/
+.training-support{
+  padding: 130px 0;
+  background: #FEC85B;
+}
+.training-support  h1{
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -0.462554px;
+  color: #10393B;
+  text-align: center;
+  margin: 0 0 78px;
+}
+.training-support .trainingDesign {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 45px 24px;
+  margin: 30px 0 0;
+}
+.training-support .trainingDesign h2{
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 29px;
+  color: #10393B;
+  margin: 29px 0 9px;
+}
+.training-support .trainingDesign p{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: #68807F;
+  margin: 0;
+}
+/***----=== Training Support Part ====----***/
+
+footer {
+  background: #fec85b;
+  padding: 70px 0;
+  font-family: "Axiforma", sans-serif !important;
+}
+
+footer h2 {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 31px;
+  color: #000000;
+  margin: 0;
+}
+
+footer ul {
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-top: 19px;
+}
+
+footer ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+}
+
+footer ul span li img {
+  margin-right: 13px;
+}
+
+.coppyrightbg {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+}

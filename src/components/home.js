@@ -180,14 +180,14 @@ export const HomeView = () => {
                         </div>
                         <div className="col-md-4">
                             <div className="trainingDesign">
-                                <img src={NotespadIcon} alt="Note" />
+                                <img src={NotesIcon} alt="Note" />
                                 <h2>Weekly workshops</h2>
                                 <p>Join the weekly marketing workshop where you will learn strategy, tactics, and best practices.</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="trainingDesign">
-                                <img src={NotesIcon} alt="Note" />
+                                <img src={DuttIcon} alt="Note" />
                                 <h2>Community support</h2>
                                 <p>Get access to an active group of over 6k members and coaches on FB. Post 24/7 for help and feedback.</p>
                             </div>

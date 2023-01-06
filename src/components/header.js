@@ -35,7 +35,7 @@ export const HeaderView = () => {
                                             <button className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"} onClick={() => navigate("/about")}>About</button>
                                         </li>
                                         <li className="nav-item">
-                                            <button className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"} onClick={() => navigate("/login")}>login</button>
+                                            <button className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"} onClick={() => navigate("/login")}>Login</button>
                                         </li>
                                     </span>
                                     <span className='flexsocial'>

@@ -16,6 +16,12 @@ import HighConverting from "../static/images/high-converting.png";
 import BulletIcon from "../static/images/bullet-icon.svg";
 import BusinessEasily from "../static/images/business-easily.png";
 import FeatureRight from "../static/images/featureRight.png";
+import DlLogo1 from "../static/images/dl-logo1.svg";
+import DlLogo2 from "../static/images/dl-logo2.svg";
+import DlLogo3 from "../static/images/dl-logo3.svg";
+import DlLogo4 from "../static/images/dl-logo4.svg";
+import DlLogo5 from "../static/images/dl-logo5.svg";
+import DlLogo6 from "../static/images/dl-logo6.svg";
 
 import { Image } from "semantic-ui-react";
 import { SimpleSliderView } from "../common/slider";
@@ -165,7 +171,7 @@ export const FeaturesView = () => {
                 </div>
             </div>
 
-            {/* <div className="favorite-tools featuretools">
+            <div className="favorite-tools featuretools">
                 <div className="container-fluid">
                     <h2>Phonesites integrates with 1000+ <span>of your favorite tools.</span></h2>
                     <div className="row m-auto">
@@ -195,7 +201,7 @@ export const FeaturesView = () => {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
             <div className="footbtpart">
                 <div className="overlay_footbtup"></div>

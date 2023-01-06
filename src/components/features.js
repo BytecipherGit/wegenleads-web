@@ -144,7 +144,7 @@ export const FeaturesView = () => {
 
             <div className="training-support">
                 <div className="container-fluid">
-                    <h1>Automations and tracking made easy</h1>
+                    <h1>AI writer does it for you</h1>
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="trainingDesign">

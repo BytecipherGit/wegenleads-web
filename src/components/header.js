@@ -13,7 +13,7 @@ export const HeaderView = () => {
                     <div className="navigation-wrap start-header start-style">
                         <nav className="navbar navbar-expand-md navbar-light">
 
-                            <button className="navbar-brand" onClick={() => navigate("/")} ><img src={Logo} alt="logo" /></button>
+                            <button className="navbar-brand cursor-pointer" onClick={() => navigate("/")} ><img src={Logo} alt="logo" /></button>
 
                             <button className="navbar-toggler" onClick={() => setShow(!show)} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>

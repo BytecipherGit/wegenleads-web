@@ -11,7 +11,7 @@ export const FooterView = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-4">
-                            <button href="index.html"><img src={FooterLogo} alt="logo" /></button>
+                            <button href="index.html" className="footlogo"><img src={FooterLogo} alt="logo" /></button>
                         </div>
                         <div className="col-md-2">
                             <h2>Quick links</h2>

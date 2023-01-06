@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ScrollToTop from ".";
 import { PageNotFoundView } from "../common/page-not-found";
-import { HomeView } from "../components";
+import { FeaturesView, HomeView, PricingView } from "../components";
 
 export const Router = () => {
     return (
@@ -14,9 +14,9 @@ export const Router = () => {
                     <Route exact={true} path="*" element={<PageNotFoundView />} />
                     <Route exact={true} path="/" element={<HomeView />} />
                     <Route exact={true} path="/about" element={<PageNotFoundView />} />
-                    <Route exact={true} path="/features" element={<PageNotFoundView />} />
+                    <Route exact={true} path="/features" element={<FeaturesView />} />
                     <Route exact={true} path="/examples" element={<PageNotFoundView />} />
-                    <Route exact={true} path="/pricing" element={<PageNotFoundView />} />
+                    <Route exact={true} path="/pricing" element={<PricingView />} />
                     <Route exact={true} path="/login" element={<PageNotFoundView />} />
                     <Route exact={true} path="/get-started" element={<PageNotFoundView />} />
                 </Routes>

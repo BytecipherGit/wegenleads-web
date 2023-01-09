@@ -18,18 +18,29 @@ import CloseSquare from "../static/images/closesquare.png";
 import RightBallIcon from "../static/images/rightBallicon.png";
 import Vctimgimg3 from "../static/images/vctimgimg3.png";
 import Vctimgimg4 from "../static/images/vctimgimg4.png";
-import RangeSlider from "../static/images/range-slider.png";
+import RangeSliderImg from "../static/images/range-slider.png";
 import Testimonial1 from "../static/images/testimonialimg1.png";
 import Testimonial2 from "../static/images/testimonialimg2.png";
 import TestimonialQuete from "../static/images/testimonial-quete.png";
 import { SimpleSliderView } from "../common/slider";
 import { AccordionContentView } from "../common/accordion-content";
+import RangeSlider from 'react-bootstrap-range-slider';
+
+import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 
 
 
 export const PricingView = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [switchActive,setSwitchActive]=useState(false);
+    const [switchActive, setSwitchActive] = useState(false);
+
+    const onChangeFunction = (e) => {
+        const el = e?.target;
+        el?.style.setProperty("--value", el?.value);
+        el?.style.setProperty("--min", el?.min === "" ? "0" : el?.min);
+        el?.style.setProperty("--max", el?.max === "" ? "100" : el?.max);
+        el?.style.setProperty("--value", el?.value);
+    };
 
     return (
         <>
@@ -49,8 +60,8 @@ export const PricingView = () => {
                 <div className="container-fluid">
                     <div className="chetoggle">
                         <span>Monthly</span>
-                        <input type="checkbox" id="checkbox1" onChange={()=>setSwitchActive(!switchActive)}/>
-                        <label for="checkbox1"></label>
+                        <input type="checkbox" id="checkbox1" onChange={() => setSwitchActive(!switchActive)} />
+                        <label htmlFor="checkbox1"></label>
                         <span className="yearclr">Yearly</span>
                     </div>
                     <div className="row col-lg-10 m-auto">
@@ -76,7 +87,9 @@ export const PricingView = () => {
                                 <h4>Unlimited</h4>
                                 <h1>{switchActive ? "$720" : "$60"} <span>/ {switchActive ? "Year" : "Month"}</span></h1>
                                 <div className="rangesli">
-                                    <img src={RangeSlider} alt="Range Slider" />
+                                    {/* <img src={RangeSliderImg} alt="Range Slider" /> */}
+                                    <RangeSlider min={0} max={100} variant="primary" tooltip="off" onChange={(e) => { onChangeFunction(e) }} />
+
                                     <h6>{switchActive ? "$60,000" : "$5,000"} volume per {switchActive ? "year" : "month"}</h6>
                                 </div>
                                 <p>Monthly pricing that automatically adjusts based on your transaction volume.</p>
@@ -118,8 +131,8 @@ export const PricingView = () => {
                 </div>
             </div>
 
-            <div class="clientprt">
-                <div class="container-fluid">
+            <div className="clientprt">
+                <div className="container-fluid">
                     <p>184,298+ websites are powered by Phonesites</p>
                     <div className="row col-md-9 m-auto">
                         <div className="col-md-2 col-sm-4 col-6">

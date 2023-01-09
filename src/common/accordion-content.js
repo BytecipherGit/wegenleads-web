@@ -3,7 +3,7 @@ import AddIcon from '../static/images/add-plus.svg';
 
 export const AccordionContentView = ({ title, children, index, activeIndex, setActiveIndex }) => {
 
-    const handleSetIndex = (index) => (activeIndex !== index) ? setActiveIndex(index) : setActiveIndex(null);
+    const handleSetIndex = (index) => (activeIndex !== index) ? setActiveIndex(index) : setActiveIndex(0);
     return (
         <>
             <div className="accordion_bx" onClick={() => handleSetIndex(index)}>

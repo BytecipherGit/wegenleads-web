@@ -23,6 +23,7 @@ import DlLogo4 from "../static/images/dl-logo4.svg";
 import DlLogo5 from "../static/images/dl-logo5.svg";
 import DlLogo6 from "../static/images/dl-logo6.svg";
 
+
 import { Image } from "semantic-ui-react";
 import { SimpleSliderView } from "../common/slider";
 

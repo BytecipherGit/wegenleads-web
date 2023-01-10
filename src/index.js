@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import './static/css/font-awesome.min.css';
 import './static/css/my-css.css';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

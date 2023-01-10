@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import FooterLogo from "../static/images/footer-logo.png";
 import FacebookIcon from "../static/images/facebook.svg";
 import InstagramIcon from "../static/images/instagram.svg";
-import { useNavigate } from "react-router-dom";
+
 
 export const FooterView = () => {
     const navigate = useNavigate();

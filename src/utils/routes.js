@@ -3,7 +3,15 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ScrollToTop from ".";
 import { PageNotFoundView } from "../common/page-not-found";
-import { AboutView, ExamplesView, FeaturesView, HomeView, PricingView } from "../components";
+import {
+    AboutView,
+    ExamplesView,
+    FeaturesView,
+    GetStartedView,
+    HomeView,
+    LoginView,
+    PricingView
+} from "../components";
 
 export const Router = () => {
     return (
@@ -17,8 +25,8 @@ export const Router = () => {
                     <Route exact={true} path="/features" element={<FeaturesView />} />
                     <Route exact={true} path="/examples" element={<ExamplesView />} />
                     <Route exact={true} path="/pricing" element={<PricingView />} />
-                    <Route exact={true} path="/login" element={<PageNotFoundView />} />
-                    <Route exact={true} path="/get-started" element={<PageNotFoundView />} />
+                    <Route exact={true} path="/login" element={<LoginView />} />
+                    <Route exact={true} path="/get-started" element={<GetStartedView />} />
                 </Routes>
             </BrowserRouter>
         </React.Fragment>

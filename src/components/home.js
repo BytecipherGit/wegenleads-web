@@ -1,6 +1,5 @@
 import React from "react";
-import { FooterView } from "./footer";
-import { HeaderView } from "./header";
+import { Image } from "semantic-ui-react";
 
 import SliderRightImg from "../static/images/sliderright.png";
 import ClientLgo1 from "../static/images/clientLgo1.svg";
@@ -40,14 +39,19 @@ import FootbtBgTop from "../static/images/footbtBgTop.png";
 import FootbtBgbottom from "../static/images/footbtBgbottom.png";
 import Vctimgimg1 from "../static/images/vctimgimg1.png";
 import Vctimgimg2 from "../static/images/vctimgimg2.png";
-import { SimpleSliderView } from "../common/slider";
 import Testimonial1 from "../static/images/testimonialimg1.png";
 import Testimonial2 from "../static/images/testimonialimg2.png";
 import TestimonialQuete from "../static/images/testimonial-quete.png";
 
-import { Image } from "semantic-ui-react";
+import { FooterView } from "./footer";
+import { HeaderView } from "./header";
+import { SimpleSliderView } from "../common/slider";
+import { useNavigate } from "react-router-dom";
 
 export const HomeView = () => {
+
+    const navigate=useNavigate();
+
     return (
         <>
             <HeaderView />
@@ -61,7 +65,7 @@ export const HomeView = () => {
                             <form>
                                 <div className="form-group">
                                     <input type="text" name="" placeholder="your@email.com" />
-                                    <button className="ActiveButton">Get Started Free</button>
+                                    <button className="ActiveButton button-Effect " type="button"> Get Started Free</button>
                                 </div>
                                 <label>Try Phonesites free for 14 days.</label>
                             </form>
@@ -160,7 +164,7 @@ export const HomeView = () => {
                                 <li><img src={BulletIcon} alt="Bullet Icon" /> No-code, drag-&-drop builder</li>
                                 <li><img src={BulletIcon} alt="Bullet Icon" /> Easiest landing page software on market</li>
                             </ul>
-                            <button className="ActiveButton">View All Features</button>
+                            <button className="ActiveButton button-Effect ">View All Features</button>
                         </div>
                         <div className="col-md-6 align-self-center">
                             <img src={HighConverting} alt="High Converting" className="imgwidth" />
@@ -350,7 +354,7 @@ export const HomeView = () => {
                     <div className="m-auto footdetails">
                         <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
                         <h2>See how PAVE completes50,000 inspectionsevery month</h2>
-                        <button>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
+                        <button className="button-Effect cursor-pointer" onClick={()=>navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                         <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                     </div>
                 </div>

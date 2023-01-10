@@ -23,8 +23,12 @@ import PersonIcon3 from "../static/images/person-icon-3.svg";
 
 import { FooterView } from "./footer";
 import { HeaderView } from "./header";
+import { useNavigate } from "react-router-dom";
 
 export const AboutView = () => {
+
+    const navigate=useNavigate();
+
     return (
         <>
             <HeaderView />
@@ -162,7 +166,7 @@ export const AboutView = () => {
                     <div className="m-auto footdetails">
                         <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
                         <h2>See how PAVE completes50,000 inspectionsevery month</h2>
-                        <button>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
+                        <button className="button-Effect cursor-pointer" onClick={()=>navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                         <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FooterView } from "./footer";
-import { HeaderView } from "./header";
+import RangeSlider from 'react-bootstrap-range-slider';
+import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
+
 import ClientLgo1 from "../static/images/clientLgo1.svg";
 import ClientLgo2 from "../static/images/clientLgo2.svg";
 import ClientLgo3 from "../static/images/clientLgo3.svg";
@@ -18,21 +19,21 @@ import CloseSquare from "../static/images/closesquare.png";
 import RightBallIcon from "../static/images/rightBallicon.png";
 import Vctimgimg3 from "../static/images/vctimgimg3.png";
 import Vctimgimg4 from "../static/images/vctimgimg4.png";
-import RangeSliderImg from "../static/images/range-slider.png";
 import Testimonial1 from "../static/images/testimonialimg1.png";
 import Testimonial2 from "../static/images/testimonialimg2.png";
 import TestimonialQuete from "../static/images/testimonial-quete.png";
+
+import { FooterView } from "./footer";
+import { HeaderView } from "./header";
 import { SimpleSliderView } from "../common/slider";
 import { AccordionContentView } from "../common/accordion-content";
-import RangeSlider from 'react-bootstrap-range-slider';
-
-import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
-
-
+import { useNavigate } from "react-router-dom";
 
 export const PricingView = () => {
+    const navigate = useNavigate();
     const [activeIndex, setActiveIndex] = useState(0);
     const [switchActive, setSwitchActive] = useState(false);
+
 
     const onChangeFunction = (e) => {
         const el = e?.target;
@@ -79,7 +80,7 @@ export const PricingView = () => {
                                     <li><img src={TickSquare} alt="Tick Square" /> Customisation options</li>
                                     <li><img src={TickSquare} alt="Tick Square" /> No whitelabel branding</li>
                                 </ul>
-                                <button>Choose plan</button>
+                                <button className="button-Effect">Choose plan</button>
                             </div>
                         </div>
                         <div className="col-md-4">
@@ -102,7 +103,7 @@ export const PricingView = () => {
                                     <li><img src={TickSquare} alt="Tick Square" /> Customisation options</li>
                                     <li><img src={TickSquare} alt="Tick Square" /> No whitelabel branding</li>
                                 </ul>
-                                <button>Choose plan</button>
+                                <button className="button-Effect">Choose plan</button>
                             </div>
                         </div>
                         <div className="col-md-4">
@@ -119,14 +120,14 @@ export const PricingView = () => {
                                     <li><img src={TickSquare} alt="Tick Square" /> Customisation options</li>
                                     <li><img src={TickSquare} alt="Tick Square" /> No whitelabel branding</li>
                                 </ul>
-                                <button>Choose plan</button>
+                                <button className="button-Effect">Choose plan</button>
                             </div>
                         </div>
                     </div>
                     <div className="col-xl-8 col-lg-10 col-md-11 m-auto pricihead">
                         <h1>Need a custom plan for your team?</h1>
                         <p>Phonesites is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
-                        <button className="ActiveButton">Contact Us</button>
+                        <button className="ActiveButton button-Effect">Contact Us</button>
                     </div>
                 </div>
             </div>
@@ -415,7 +416,7 @@ export const PricingView = () => {
                         <div className="m-auto footdetails">
                             <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
                             <h2>See how PAVE completes50,000 inspectionsevery month</h2>
-                            <button>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
+                            <button className="button-Effect cursor-pointer" onClick={() => navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                             <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                         </div>
                     </div>

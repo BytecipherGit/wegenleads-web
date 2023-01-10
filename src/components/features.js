@@ -1,6 +1,6 @@
 import React from "react";
-import { FooterView } from "./footer";
-import { HeaderView } from "./header";
+import { Image } from "semantic-ui-react";
+import { SimpleSliderView } from "../common/slider";
 
 import RightArrow from "../static/images/right-arrow.svg";
 import FootbtBgTop from "../static/images/footbtBgTop.png";
@@ -23,11 +23,14 @@ import DlLogo4 from "../static/images/dl-logo4.svg";
 import DlLogo5 from "../static/images/dl-logo5.svg";
 import DlLogo6 from "../static/images/dl-logo6.svg";
 
-
-import { Image } from "semantic-ui-react";
-import { SimpleSliderView } from "../common/slider";
+import { FooterView } from "./footer";
+import { HeaderView } from "./header";
+import { useNavigate } from "react-router-dom";
 
 export const FeaturesView = () => {
+
+    const navigate=useNavigate();
+
     return (
         <>
             <HeaderView />
@@ -134,7 +137,7 @@ export const FeaturesView = () => {
                                 <li><img src={BulletIcon} alt="Bullet Icon" /> Get notified about comments and status updates</li>
                                 <li><img src={BulletIcon} alt="Bullet Icon" /> Have one single source of truth for all design</li>
                             </ul>
-                            <button className="ActiveButton">View All Features</button>
+                            <button className="ActiveButton button-Effect">View All Features</button>
                         </div>
                         <div className="col-md-6 align-self-center">
                             <img src={HighConverting} alt="High Converting" className="imgwidth" />
@@ -211,7 +214,7 @@ export const FeaturesView = () => {
                     <div className="m-auto footdetails">
                         <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
                         <h2>See how PAVE completes50,000 inspectionsevery month</h2>
-                        <button>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
+                        <button className="button-Effect cursor-pointer" onClick={()=>navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                         <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                     </div>
                 </div>

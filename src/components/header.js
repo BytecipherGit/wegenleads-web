@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import Logo from "../static/images/logo.png";
 
 export const HeaderView = () => {
@@ -40,7 +41,7 @@ export const HeaderView = () => {
                                     </span>
                                     <span className='flexsocial'>
                                         <li className="nav-item">
-                                            <button className="nav-link" onClick={() => navigate("/get-started")}>Sign up free</button>
+                                            <button className="nav-link button-Effect" onClick={() => navigate("/get-started")}>Sign up free</button>
                                         </li>
                                     </span>
                                 </ul>

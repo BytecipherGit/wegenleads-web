@@ -2,12 +2,15 @@ import React, { useState } from "react";
 
 import RightArrow from "../static/images/right-arrow.svg";
 import TvIcon from "../static/images/presention-chart.svg";
+import AuthorProfile from "../static/images/author-profile.png";
 
 import { HeaderView } from "./header";
 import { AccordionContentView } from "../common/accordion-content";
+import { useNavigate } from "react-router-dom";
 
 export const GetStartedView = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+    const navigate = useNavigate();
     return (
         <>
             <HeaderView />
@@ -60,15 +63,15 @@ export const GetStartedView = () => {
                                     </div>
 
                                 </form>
-                                <p>By creating an account, you are agreeing to our <span> Terms of Service</span> and<span> Privacy Policy</span>.</p>
-                                <p>Already have an account? <span>Log In</span></p>
+                                <p>By creating an account, you are agreeing to our <span onClick={() => { navigate("/not-found") }}> Terms of Service</span> and<span onClick={() => { navigate("/not-found") }}> Privacy Policy</span>.</p>
+                                <p>Already have an account? <span onClick={() => { navigate("/login") }}>Log In</span></p>
 
                             </div>
 
                             <div className="mt-5 d-flex justify-content-between ">
                                 <div className="row">
                                     <div className="col-lg-6 ">
-                                        {/* <div className="testimonial-head ">
+                                        <div className="testimonial-head ">
                                             <div className="row">
                                                 <img src={TvIcon} alt="tv-icon" />
                                                 <span>
@@ -76,14 +79,20 @@ export const GetStartedView = () => {
                                                     <p>176k pages made</p>
                                                 </span>
                                             </div>
-                                        </div> */}
-                                        <div className="testimonial-quote">
+                                        </div>
+                                        <div className="testimonial-quote ">
                                             <p>“In the last 5 weeks I've been able to generate over 524 highly qualified leads with Phonesites. I use it for several different types businesses, and it works with them all of them. The ROI for me was 1,000% or more.”
                                             </p>
-                                            {/* <div className="testimonial-quote-author">
-                                                <h6>Mat Smith</h6>
-                                                <p>Founder & CEO at Wealth Creation Station</p>
-                                            </div> */}
+                                            <div className="testimonial-quote-author">
+                                                <div className="row">
+                                                    <img src={AuthorProfile} alt="author" />
+                                                    <span>
+                                                        <h6>Mat Smith</h6>
+                                                        <p>Founder & CEO at Wealth Creation Station</p>
+                                                    </span>
+                                                </div>
+
+                                            </div>
                                         </div>
 
                                     </div>

@@ -76,8 +76,8 @@ export const HomeView = () => {
                     </div>
                 </div>
             </div>
-            <div class="clientprt">
-                <div class="container-fluid">
+            <div className="clientprt">
+                <div className="container-fluid">
                     <p>184,298+ websites are powered by Phonesites</p>
                     <div className="row col-md-9 m-auto">
                         <div className="col-md-2 col-sm-4 col-6">
@@ -210,7 +210,7 @@ export const HomeView = () => {
 
             <div className="training-support">
                 <div className="container-fluid">
-                    <h1>Training and world-class support</h1>
+                    <h1>Training and world-className support</h1>
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="trainingDesign">

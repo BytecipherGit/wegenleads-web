@@ -4,8 +4,10 @@ import SmsIcon from "../static/images/sms.svg";
 import KeyIcon from "../static/images/key.svg";
 
 import { HeaderView } from "./header";
+import { useNavigate } from "react-router-dom";
 
 export const LoginView = () => {
+    const navigate=useNavigate();
 
 
     return (
@@ -39,8 +41,8 @@ export const LoginView = () => {
 
                             </div>
                         </div>
-                        <p>Not a member yet? <span>Get started</span></p>
-                        <p>Forgot password? <span>Reset password</span></p>
+                        <p>Not a member yet? <span onClick={()=>{navigate("/get-started")}}>Get started</span></p>
+                        <p>Forgot password? <span onClick={()=>{navigate("/not-found")}}>Reset password</span></p>
                     </div>
 
 

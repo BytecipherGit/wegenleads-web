@@ -21,6 +21,7 @@ import ProductImg9 from "../static/images/product-img-9.png";
 import ProductImg10 from "../static/images/product-img-10.png";
 import ProductImg11 from "../static/images/product-img-11.png";
 import ProductImg12 from "../static/images/product-img-12.png";
+import SearchIcon from "../static/images/search-icon.svg";
 
 import { FooterView } from "./footer";
 import { HeaderView } from "./header";
@@ -31,7 +32,7 @@ export const ExamplesView = () => {
 
     const [pageNumber, setPageNumber] = useState(0);
     // const [totalPages, setTotalPages] = useState(4);
-    const navigate=useNavigate();
+    const navigate = useNavigate();
 
     return (
         <>
@@ -50,11 +51,30 @@ export const ExamplesView = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
             <div className="example-filter ">
+                <div className="search-box">
+                    <div className=" d-flex justify-content-center">
+                        <div className="row">
+                            <form>
+                                <div className="form-group">
+                                    <span className="formPositn">
+                                        <img src={SearchIcon} className='imgfrmPs' alt='search' />
+                                        <input placeholder="Search here anything..." type="text" />
+                                        <button type="button" className="ActiveButton">Get started free</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <div className="container-fluid">
+
+
+
                     <p>Industries</p>
 
                     <div className="industry-filter">
@@ -95,7 +115,7 @@ export const ExamplesView = () => {
 
                         <Tabs defaultActiveKey="All-template" className="m-auto template-tabs " >
 
-                            <Tab eventKey="All-template" title="All" >
+                            <Tab eventKey="All-template" title="All"  >
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container ">
@@ -701,7 +721,7 @@ export const ExamplesView = () => {
                     <div className="m-auto footdetails">
                         <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
                         <h2>See how PAVE completes50,000 inspectionsevery month</h2>
-                        <button className="button-Effect cursor-pointer" onClick={()=>navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
+                        <button className="button-Effect cursor-pointer" onClick={() => navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                         <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                     </div>
                 </div>

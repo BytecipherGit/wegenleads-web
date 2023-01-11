@@ -1173,9 +1173,7 @@ footer ul span li img {
   margin: 78px 0 183px;
 }
 
-.aboutleadership {
-  margin: 78px 0 183px;
-}
+
 
 @media (max-width:1728px) {
   .featurerightimg {
@@ -1202,11 +1200,68 @@ footer ul span li img {
 
 
 /****-------====== About Css Start =======-----***/
+.aboutleadership {
+  margin: 78px 0 183px;
+}
 /****-------====== About Css End =======-----***/
 
 
 /****-------====== Example Css Start =======-----***/
-.industry-filter {
+
+.example-filter {
+  width: 100%;
+  padding: 72px 0 72px 0px;
+}
+
+.example-filter .search-box {
+  justify-content: center;
+  margin-top: -110px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.example-filter .search-box form .form-group {
+  margin-bottom: 28px;
+}
+
+.example-filter .search-box form input {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 23px 68px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #5e797a;
+  border: none;
+  outline: none;
+}
+
+.example-filter .search-box form button {
+  padding: 20px 43px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.92);
+  border: none;
+}
+
+.example-filter .search-box form label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.76);
+  margin: 0;
+}
+
+.example-filter .search-box form input::placeholder {
+  color: #5E797A !important;
+}
+
+.example-filter .industry-filter {
   padding: 20px 0 20px 0;
   margin: 0 0 20px 0;
   justify-content: center;
@@ -1226,6 +1281,24 @@ footer ul span li img {
   text-align: center;
 }
 
+
+.example-filter .formPositn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 9px;
+  border-radius: 15px;
+}
+
+
+.example-filter .form-group .formPositn .imgfrmPs {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  vertical-align: middle;
+}
+
 .industry-tabs {
   justify-content: center;
 }
@@ -1243,10 +1316,6 @@ footer ul span li img {
 
 /*  template-filter */
 
-.example-filter {
-  width: 100%;
-  padding: 72px 0 50px;
-}
 
 .example-filter p {
   font-weight: 500;
@@ -1259,7 +1328,7 @@ footer ul span li img {
 }
 
 
-.example-filter img {
+.example-filter .template-filter img {
   width: 100%;
 }
 
@@ -1464,6 +1533,7 @@ footer ul span li img {
 
 .login-container p span {
   color: #FEC85B;
+  cursor: pointer;
 }
 
 /****-------====== Login Css End =======-----***/
@@ -1563,6 +1633,7 @@ footer ul span li img {
 
 .get-started-container p span {
   color: #FEC85B;
+  cursor: pointer;
 }
 
 
@@ -1594,15 +1665,18 @@ footer ul span li img {
   margin: 0;
   padding: 0;
 }
+
 .get-started-container .testimonial-head img {
   vertical-align: middle;
   margin-right: 10px;
   align-items: center;
 }
+
 .get-started-container .testimonial-quote {
   background: #fff;
   border-radius: 15px;
   padding: 26px 21px 21px 28px;
+  margin-bottom: 25px;
 
 }
 
@@ -1612,7 +1686,15 @@ footer ul span li img {
   margin: 0 0 8px 0;
   padding: 0;
   width: 100%;
+}
 
+.get-started-container .testimonial-quote img {
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-right: 20px;
+  align-items: center;
+  width: 70px;
+  height: auto;
 }
 
 .get-started-container .testimonial-quote .testimonial-quote-author {
@@ -1631,7 +1713,7 @@ footer ul span li img {
 .get-started-container .testimonial-quote .testimonial-quote-author p {
   font-weight: 500;
   font-size: 16px;
-  margin: 0 0 0 0;  
+  margin: 0 0 0 0;
   letter-spacing: 0.02em;
   color: #68807F;
 

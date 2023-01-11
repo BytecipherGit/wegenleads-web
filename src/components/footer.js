@@ -30,8 +30,8 @@ export const FooterView = () => {
                         <div className="col-md-2">
                             <h2>Customers</h2>
                             <ul>
-                                <li><button type="button" onClick={() => navigate("/not-found")}>Sign In</button></li>
-                                <li><button type="button" onClick={() => navigate("/not-found")}>Sign Up</button></li>
+                                <li><button type="button" onClick={() => navigate("/login")}>Sign In</button></li>
+                                <li><button type="button" onClick={() => navigate("/get-started")}>Sign Up</button></li>
                                 <li><button type="button" onClick={() => navigate("/not-found")}>Forget Password</button></li>
                                 <li><button type="button" onClick={() => navigate("/not-found")}>Blog</button></li>
                             </ul>

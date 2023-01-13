@@ -401,6 +401,27 @@ header .navbar-dark .navbar-nav .d-flexRight .nav-item {
   display: initial !important;
 }
 
+.cusprofilebox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 15px 0 0;
+}
+.cusprofilebox h6{
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.462554px;
+  color: #10393B;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+.cusprofilebox h4{
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.462554px;
+  color: #10393B;
+  font-weight: 500;
+}
 /***----=== CusServis Part ====----***/
 
 /***----=== Training Support Part ====----***/
@@ -1203,6 +1224,119 @@ footer ul span li img {
 .aboutleadership {
   margin: 78px 0 183px;
 }
+.aboutcussldr .featurerightimg {
+  position: absolute;
+  bottom: 10%;
+  left: -20%;
+}
+.aboutcussldr .featurerightmar {
+  margin-left: 0;
+}
+.aboutcussldr .imgright {
+  width: 100%;
+  left: 32%;
+  position: relative;
+}
+.cussliimgtop {
+  position: absolute;
+  top: 15%;
+}
+.cussliimgbotom{
+  position: absolute;
+  bottom:8%;
+}
+.cussliimgtopRight{
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+.cussliimgbotomRight{
+  position: absolute;
+  bottom:-11px;
+  right: 0;
+}
+.aboutimgeffect {
+  margin: -50px 0 0;
+  display: block;
+  width: 100%;
+}
+.aboutimgeffect img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  margin-bottom: 30px;
+  width: 100%;
+}
+.aboutimgeffect img:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.aboutimgeffect .col-md-4{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.aboutIdea {
+  padding: 82px 0 0;
+  background: #FEC85B;
+  position: relative;
+}
+.aboutIdea h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -0.462554px;
+  color: #10393B;
+  text-align: center;
+  margin: 0;
+}
+.aboutIdea h1 span{
+  display: block;
+}
+.aboutIdea .pragraph {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #68807F;
+  text-align: justify;  
+  padding:78px 0 0;
+}
+.aboutIdea .vctidealeft{
+  width: 145px;
+}
+.aboutIdea .vctidearight {
+  width: 139px;
+  position: absolute;
+  right: 80px;
+  top: 50%;
+}
+.aboutIdea .aboutIdeaImgpossion{
+  position:relative;
+  top: -145px;
+  left: -25px;
+}
+.aboutIdea .ideaservices{
+  margin-top:88px;
+}
+.aboutIdea .ideaservices h4{
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 39px;
+  letter-spacing: -0.462554px;
+  color: #10393B;
+  margin: 0 0 18px;
+}
+.aboutIdea .ideaservices p{
+  font-size: 18px;
+  line-height:20px;
+  letter-spacing: -0.462554px;
+  color: rgba(16, 57, 59, 0.69);
+}
 /****-------====== About Css End =======-----***/
 
 
@@ -1212,13 +1346,25 @@ footer ul span li img {
   width: 100%;
   padding: 72px 0 72px 0px;
 }
+.sliexmple{
+  position: relative;
+}
+.sliexmple .cussliimgtop {
+  position: absolute;
+  top: 15%;
+}
+.sliexmple .cussliimgbotom{
+  position: absolute;
+  bottom:8%;
+}
 
 .example-filter .search-box {
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: -110px;
   text-align: center;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
+  width: 100%;
 }
 
 .example-filter .search-box form .form-group {
@@ -1323,8 +1469,9 @@ footer ul span li img {
   line-height: 34px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #0f393b;
-  margin: 0 0 25px;
+  color: #0F393B;
+  margin:30px 0 25px;
+  font-family: 'Galano Grotesque', sans-serif;
 }
 
 
@@ -1377,7 +1524,63 @@ footer ul span li img {
   padding: 20px 15px;
   margin-right: 25px;
   width: 22% !important;
+  position: relative;
 }
+.template-filter .template-container .product-container .menudrop {
+  width: 22px !important;
+  height: 30px !important;
+  border-radius: 0 !important;
+  margin: 0;
+}
+.template-filter .template-container .product-container .dropdown {
+  position: absolute;
+  right: 22px;
+  top: 32px;
+}
+.template-filter .template-container .product-container button#dropdown-basic {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.template-filter .template-container .product-container .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0;
+  vertical-align: 0;
+  content: "";
+  border-top: 0 solid;
+  border-right: 0 solid transparent;
+  border-bottom: 0;
+  border-left: 0 solid transparent;
+}
+.template-filter .template-container .product-container .btn-success:not(:disabled):not(.disabled).active:focus, 
+.template-filter .template-container .product-container .btn-success:not(:disabled):not(.disabled):active:focus, 
+.template-filter .template-container .product-container .show>.btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 rgba(40,167,69,.5);
+}
+
+.template-filter .template-container .product-container .dropdown-menu.show {
+  display: block;
+  background: #FFFFFF;
+  border-radius: 15px;
+  border: none;
+  padding: 0;
+}
+.template-filter .template-container .product-container .dropdown-item:focus, 
+.template-filter .template-container .product-container .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #FEC85B;
+}
+.template-filter .template-container .product-container a:first-child:hover{
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+.template-filter .template-container .product-container a:last-child:hover{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  }
 
 .template-filter .template-container .product-container h6 {
   align-items: center;
@@ -1489,7 +1692,7 @@ footer ul span li img {
 /****-------====== Login Css Start =======-----***/
 .login-container {
   text-align: center;
-  padding: 10px 100px 10px 100px;
+  padding: 0 0 306px 0;
 }
 
 .login-container p {
@@ -1502,6 +1705,10 @@ footer ul span li img {
   letter-spacing: 0.02em;
   padding: 0 25px 0 25px;
 }
+.login-container form{
+  width: 100%;
+  margin-top: 40px;
+}
 
 .login-container .formPositn {
   position: relative;
@@ -1513,29 +1720,53 @@ footer ul span li img {
 
 .login-container .form-group .formPositn input {
   padding: 19px 68px !important;
+  width: 100% !important;
 }
 
 .login-container .form-group .formPositn input::placeholder {
   color: #5E797A !important;
 }
 
-.login-container .form-group button {
-  width: 35%;
-}
-
 .login-container .form-group .formPositn .imgfrmPs {
   position: absolute;
   top: 21px;
-  left: 257px;
+  left: 26px;
   margin: auto;
   vertical-align: middle;
 }
+
 
 .login-container p span {
   color: #FEC85B;
   cursor: pointer;
 }
-
+.loginrightimg{
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+.leftvctimg {
+  position: absolute;
+  left: 25%;
+  bottom: 25%;
+  width: 79px;
+}
+.rightvctimg {
+  position: absolute;
+  right: 25%;
+  top: 18%;
+  width: 79px;
+}
+.loginbottomimg{
+  position: absolute;
+  right: 0;
+  bottom:0;
+}
+.loginGraphimg{
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+}
 /****-------====== Login Css End =======-----***/
 
 
@@ -1616,8 +1847,7 @@ footer ul span li img {
 }
 
 .get-started-container .form-container .form-group button {
-  width: 50%;
-
+  margin: 0 0 20px;
 }
 
 .get-started-container .form-container .form-group button img {
@@ -1752,25 +1982,32 @@ footer ul span li img {
   padding: 0px 55px 0px 0px;
   text-align: justify;
 }
-
+.q-singprt{
+  margin: 82px 0 0;
+}
+.signpage .leftvctimg {
+  left: 6%;
+  bottom: 12%
+}
+.signpage .rightvctimg {
+  position: absolute;
+  right: 6%;
+}
 /****-------====== Get Started Css End =======-----***/
 
 
 
 /* ***** Pricing range slider*** */
-
-input[type=range] {
+ input[type=range] {
   -webkit-appearance: none !important;
   appearance: none;
   cursor: pointer !important;
 }
-
 input[type=range] {
   --range: calc(var(--max) - var(--min));
   --ratio: calc((var(--value) - var(--min)) / var(--range));
   --sx: calc(0.5 * 10px + var(--ratio) * (100% - 10px));
 }
-
 input[type=range]::-webkit-slider-thumb {
   background: #FFF !important;
   color: #10393B !important;
@@ -1779,6 +2016,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 15px !important;
   width: 15px !important;
   margin-top: -6px !important;
+  border-radius: 50%;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -1790,11 +2028,12 @@ input[type=range]:hover::-webkit-slider-runnable-track {
 }
 
 input[type=range]:active::-webkit-slider-runnable-track {
-  background: linear-gradient(#10393B, #10393B) 0/var(--sx) 100% no-repeat, #ced4da;
+  background: linear-gradient(#10393B, #10393B) 0/var(--sx) 100% no-repeat,  #ced4da;
 }
 
+
 /* For firefox */
-input[type=range]::-moz-range-thumb {
+/* input[type=range]::-moz-range-thumb {
   background: #FFF !important;
   color: #10393B !important;
   outline: solid 4px #10393B !important;
@@ -1815,7 +2054,7 @@ input[type=range]:hover::-moz-range-track {
 
 input[type=range]:active::-moz-range-track {
   background: linear-gradient(#10393B, #10393B) 0/var(--sx) 100% no-repeat, #ced4da;
-}
+}  */
 
 /* For firefox */
 

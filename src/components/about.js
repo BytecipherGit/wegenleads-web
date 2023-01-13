@@ -20,6 +20,17 @@ import AboutLeadership from "../static/images/about-leadership.png";
 import PersonIcon1 from "../static/images/person-icon-1.svg";
 import PersonIcon2 from "../static/images/person-icon-2.svg";
 import PersonIcon3 from "../static/images/person-icon-3.svg";
+import AboutTOpslider from "../static/images/about-sli-top.png";
+import AboutSlibottom from "../static/images/about-sli-bottom.png";
+import AboutSlirighttop from "../static/images/about-sli-righttop.png";
+import AboutSlirightbottom from "../static/images/about-sli-rightbottom.png";
+import AboutEffect1 from "../static/images/abouteffect01.png";
+import AboutEffect2 from "../static/images/abouteffect02.png";
+import AboutEffect3 from "../static/images/abouteffect03.png";
+import Vctimgimg4 from "../static/images/vctimgimg4.png";
+import Vctimgimg5 from "../static/images/vctimgimg5.png";
+import PlayButton from "../static/images/play-button.png";
+import IdeaImgarrow from "../static/images/ideaImg-arrow.png";
 
 import { FooterView } from "./footer";
 import { HeaderView } from "./header";
@@ -32,13 +43,15 @@ export const AboutView = () => {
     return (
         <>
             <HeaderView />
-            <div className="sliderpart featureslide">
+            <div className="sliderpart featureslide aboutcussldr">
+                <img src={AboutTOpslider} alt="Slide" className="cussliimgtop" />
+                <img src={AboutSlibottom} alt="Slide" className="cussliimgbotom" />
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-5 align-self-center">
                             <h1>184,298+ websites are powered by Phonesites</h1>
                         </div>
-                        <div className="col-md-7 align-self-center">
+                        <div className="col-md-4 align-self-center">
                             <div className="featurerightmar">
                                 <img src={AboutVisitors} className="imgright" alt="slider" />
                                 <img src={FeatureRight} className="featurerightimg" alt="slider" />
@@ -46,6 +59,8 @@ export const AboutView = () => {
                         </div>
                     </div>
                 </div>
+                <img src={AboutSlirighttop} alt="Slide" className="cussliimgtopRight" />
+                <img src={AboutSlirightbottom} alt="Slide" className="cussliimgbotomRight" />
             </div>
             <div className="clientprt">
                 <div className="container-fluid">
@@ -72,11 +87,58 @@ export const AboutView = () => {
                     </div>
                 </div>
             </div>
-            <div className="training-support justify-content-center">
+            <div className=" aboutIdea">
                 <div className="container-fluid">
-                    <h1>We built Phonesites to<br /> make launching your ideas<br /> easy and fast</h1>
-                    <p>Before starting Phonesites, we were frustrated by the solutions on the market. They were complicated, bulky, and required a desktop computer.We wanted to make launching our ideas and offers easy and fast. And we wanted to do it from any device, from anywhere.
+                    <img src={Vctimgimg4} alt="Vct" className="vctidealeft" />
+                    <img src={Vctimgimg5} alt="Vct" className="vctidearight"  />
+                    <h1 className="col-lg-8 m-auto">We built Phonesites to <span className="d-black">make launching your ideas</span> easy and fast</h1>
+                    <p className="pragraph col-lg-5 m-auto">Before starting Phonesites, we were frustrated by the solutions on the market. They were complicated, bulky, and required a desktop computer.We wanted to make launching our ideas and offers easy and fast. And we wanted to do it from any device, from anywhere.
                     </p>
+                    <div className="row col-lg-8 m-auto">
+                        <div className="col-md-3">
+                            <div className="aboutIdeaImgpossion">
+                                <img src={IdeaImgarrow} alt="arrow" className="ml-5 mb-5"/>
+                                <img src={PlayButton} alt="Play" />
+                            </div>
+                        </div>
+                        <div className="col-md-9">
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <div className="ideaservices">
+                                        <h4>52M+</h4>
+                                        <p>We built Phonesites to make launching your ideas easy and fast</p>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="ideaservices">
+                                        <h4>170K+</h4>
+                                        <p>We built Phonesites to make launching your ideas easy and fast</p>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="ideaservices">
+                                        <h4>1.3M+</h4>
+                                        <p>We built Phonesites to make launching your ideas easy and fast</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="aboutimgeffect">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <img src={AboutEffect1} alt="About Effect" />
+                        </div>
+                        <div className="col-md-4">
+                            <img src={AboutEffect2} alt="About Effect" />
+                        </div>
+                        <div className="col-md-4">
+                            <img src={AboutEffect3} alt="About Effect" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="cusServis featureservi">
@@ -91,6 +153,13 @@ export const AboutView = () => {
                                 <li><img src={BulletIcon} alt="Bullet Icon" /> Have one single source of truth for all design</li>
                             </ul>
                             {/* <button className="ActiveButton">View All Features</button> */}
+                            <div className="cusprofilebox">
+                                <img src={Vctimgimg4} alt="" />
+                                <div className="col-xl-6 col-lg-8 col-md-10">
+                                    <h6><i>“We built Phonesites to make launching your ideas easy and fast”</i></h6>
+                                    <h4>James Borden- CEO</h4>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-6 align-self-center">
                             <img src={HighConverting} alt="High Converting" className="imgwidth" />
@@ -107,6 +176,13 @@ export const AboutView = () => {
                             <p>Since 2018, Phonesites has worked to achieve the goals of its customers.‍We work with customers across several industries like auto, finance, real estate, insurance, home services, coaching, consulting, and more.</p>
 
                             {/* <button className="ActiveButton">View All Features</button> */}
+                            <div className="cusprofilebox">
+                                <img src={Vctimgimg4} alt="" />
+                                <div className="col-xl-6 col-lg-8 col-md-10">
+                                    <h6><i>“We built Phonesites to make launching your ideas easy and fast”</i></h6>
+                                    <h4>James Borden- CEO</h4>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-6 align-self-center">
                             <img src={MarketingProblem} alt="High Converting" className="imgwidth" />

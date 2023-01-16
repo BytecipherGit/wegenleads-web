@@ -22,11 +22,15 @@ import ProductImg10 from "../static/images/product-img-10.png";
 import ProductImg11 from "../static/images/product-img-11.png";
 import ProductImg12 from "../static/images/product-img-12.png";
 import SearchIcon from "../static/images/search-icon.svg";
+import AboutTOpslider from "../static/images/about-sli-top.png";
+import AboutSlibottom from "../static/images/about-sli-bottom.png";
+import MenuBar from "../static/images/menuBar.png";
 
 import { FooterView } from "./footer";
 import { HeaderView } from "./header";
 import { PaginationView } from "../common/pagination";
 import { useNavigate } from "react-router-dom";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 export const ExamplesView = () => {
 
@@ -38,7 +42,9 @@ export const ExamplesView = () => {
         <>
             <HeaderView />
 
-            <div className="sliderpart featureslide">
+            <div className="sliderpart featureslide sliexmple">
+                <img src={AboutTOpslider} alt="Slide" className="cussliimgtop" />
+                <img src={AboutSlibottom} alt="Slide" className="cussliimgbotom" />
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-5 align-self-center">
@@ -46,7 +52,7 @@ export const ExamplesView = () => {
                         </div>
                         <div className="col-md-7 align-self-center">
                             <div className="featurerightmar">
-                                <img src={TemplateSlider} className="imgright" alt="slider" />
+                                <img src={TemplateSlider} className="imgright mb-5" alt="slider" />
                                 <img src={FeatureRight} className="featurerightimg" alt="slider" />
                             </div>
                         </div>
@@ -56,26 +62,22 @@ export const ExamplesView = () => {
             </div>
 
             <div className="example-filter ">
-                <div className="search-box">
-                    <div className=" d-flex justify-content-center">
-                        <div className="row">
+                <div className="container-fluid">
+                    <div className="row col-md-12 m-auto">
+                        <div className="search-box">
                             <form>
                                 <div className="form-group">
                                     <span className="formPositn">
                                         <img src={SearchIcon} className='imgfrmPs' alt='search' />
                                         <input placeholder="Search here anything..." type="text" />
-                                        <button type="button" className="ActiveButton">Get started free</button>
+                                        <button type="button" className="ActiveButton ml-auto">Get started free</button>
                                     </span>
                                 </div>
                             </form>
                         </div>
                     </div>
-                </div>
-                <div className="container-fluid">
 
-
-
-                    <p>Industries</p>
+                    <p className="exmplheadmrgin">Industries</p>
 
                     <div className="industry-filter">
 
@@ -119,24 +121,69 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container ">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+
                                         <img src={ProductImg1} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg2} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg3} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg4} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -146,24 +193,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg5} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg6} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg7} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg8} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -173,24 +264,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg9} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg10} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg11} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg12} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -203,24 +338,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container ">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg1} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg2} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg3} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg4} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -230,24 +409,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg5} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg6} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg7} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg8} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -257,24 +480,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg9} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg10} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg11} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg12} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -286,24 +553,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container ">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg1} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg2} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg3} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg4} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -313,24 +624,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg5} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg6} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg7} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg8} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -340,24 +695,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg9} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg10} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg11} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg12} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -369,24 +768,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container ">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg1} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg2} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg3} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg4} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -396,24 +839,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg5} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg6} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg7} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg8} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -423,24 +910,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg9} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg10} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg11} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg12} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -452,12 +983,34 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container ">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg1} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg2} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
@@ -470,6 +1023,17 @@ export const ExamplesView = () => {
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg4} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -479,24 +1043,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg5} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg6} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg7} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg8} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -506,24 +1114,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg9} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg10} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg11} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg12} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -535,24 +1187,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container ">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg1} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg2} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg3} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg4} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -562,24 +1258,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg5} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg6} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg7} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg8} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -589,24 +1329,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg9} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg10} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg11} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg12} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -618,24 +1402,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container ">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg1} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg2} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg3} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg4} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -645,24 +1473,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg5} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg6} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg7} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg8} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>
@@ -672,24 +1544,68 @@ export const ExamplesView = () => {
                                 <div className="row template-container  d-flex justify-content-between " >
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg9} alt="product" />
                                         <h6> Beauty Salons, SPA,...</h6>
                                         <p>Long opt-in funnel page for beauty salons, SPA, hairdressers</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg10} alt="product" />
                                         <h6> Dentists, Optometrists</h6>
                                         <p>Short opt-in funnel and landing page for dentists, optometrists</p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg11} alt="product" />
                                         <h6> Professional, Speci</h6>
                                         <p>Very bright and attractive digital business card, is ideal </p>
                                     </div>
 
                                     <div className="product-container">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                <img src={MenuBar} alt="Menu Bar" className="menudrop" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item>Menu 01</Dropdown.Item>
+                                                <Dropdown.Item>Menu 02</Dropdown.Item>
+                                                <Dropdown.Item>Menu 03</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                         <img src={ProductImg12} alt="product" />
                                         <h6> Kids' Birthday Parti</h6>
                                         <p>Digital business card for kids' birthday parties planner</p>

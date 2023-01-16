@@ -1998,17 +1998,17 @@ border-top-right-radius: 15px;
 
 
 /* ***** Pricing range slider*** */
- input[type=range] {
-  -webkit-appearance: none !important;
+.rangesli input[type=range] {
+  -webkit-appearance: none;
   appearance: none;
   cursor: pointer !important;
 }
-input[type=range] {
+.rangesli input[type=range] {
   --range: calc(var(--max) - var(--min));
   --ratio: calc((var(--value) - var(--min)) / var(--range));
   --sx: calc(0.5 * 10px + var(--ratio) * (100% - 10px));
 }
-input[type=range]::-webkit-slider-thumb {
+.rangesli input[type=range]::-webkit-slider-thumb {
   background: #FFF !important;
   color: #10393B !important;
   outline: solid 4px #10393B !important;
@@ -2019,17 +2019,19 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 50%;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+.rangesli input[type=range]::-webkit-slider-runnable-track {
   background: linear-gradient(#10393B, #10393B) 0/var(--sx) 100% no-repeat, #ced4da;
 }
 
-input[type=range]:hover::-webkit-slider-runnable-track {
+.rangesli input[type=range]:hover::-webkit-slider-runnable-track {
   background: linear-gradient(#10393B, #10393B) 0/var(--sx) 100% no-repeat, #ced4da;
 }
 
-input[type=range]:active::-webkit-slider-runnable-track {
+.rangesli input[type=range]:active::-webkit-slider-runnable-track {
   background: linear-gradient(#10393B, #10393B) 0/var(--sx) 100% no-repeat,  #ced4da;
 }
+
+
 
 
 /* For firefox */

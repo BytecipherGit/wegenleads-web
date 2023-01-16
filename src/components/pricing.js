@@ -89,7 +89,7 @@ export const PricingView = () => {
                                 <h1>{switchActive ? "$720" : "$60"} <span>/ {switchActive ? "Year" : "Month"}</span></h1>
                                 <div className="rangesli">
                                     {/* <img src={RangeSliderImg} alt="Range Slider" /> */}
-                                    <RangeSlider min={0} max={100} variant="primary" tooltip="off" onChange={(e) => { onChangeFunction(e) }} />
+                                    <RangeSlider style={{"--value":"50", "--min":"0", "--max":"100"}} min={0} max={100} variant="primary" tooltip="off" onChange={(e) => { onChangeFunction(e) }}/>
 
                                     <h6>{switchActive ? "$60,000" : "$5,000"} volume per {switchActive ? "year" : "month"}</h6>
                                 </div>

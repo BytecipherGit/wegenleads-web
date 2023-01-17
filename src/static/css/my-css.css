@@ -1874,6 +1874,9 @@ border-top-right-radius: 15px;
 .template-filter {margin: 0 0 50px 0;}
 }
 @media (max-width:812px){
+.example-filter p {font-size: 20px; line-height: 28px;}
+}
+@media (max-width:812px){
 .template-filter .template-container .product-container {width: 46% !important;}
 }
 @media (max-width:654px){

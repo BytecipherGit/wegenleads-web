@@ -35,7 +35,7 @@ export const FeaturesView = () => {
         <>
             <HeaderView />
 
-            <div className="sliderpart featureslide">
+            <div className="sliderpart featureslide cutfeaturesli">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-5 align-self-center">

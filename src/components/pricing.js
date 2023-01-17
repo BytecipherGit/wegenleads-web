@@ -65,7 +65,7 @@ export const PricingView = () => {
                         <label htmlFor="checkbox1"></label>
                         <span className="yearclr">Yearly</span>
                     </div>
-                    <div className="row col-lg-10 m-auto">
+                    <div className="row col-xl-10 col-lg-12 m-auto">
                         <div className="col-md-4">
                             <div className="pricingboxDs">
                                 <h4>Essential</h4>
@@ -136,22 +136,22 @@ export const PricingView = () => {
                 <div className="container-fluid">
                     <p>184,298+ websites are powered by Phonesites</p>
                     <div className="row col-md-9 m-auto">
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo1} alt='Logo 1' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo2} alt='Logo 2' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo3} alt='Logo 3' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo4} alt='Logo 4' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo5} alt='Logo 5' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo6} alt='Logo 6' />
                         </div>
                     </div>
@@ -164,67 +164,68 @@ export const PricingView = () => {
                         <h1>Choose the right plan for your business</h1>
                         <p>Phonesites is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
                     </div>
-
-                    <table className="table">
-                        <thead>
-                            <tr>
-                                <th>Main features</th>
-                                <th>Essential</th>
-                                <th>Unlimited</th>
-                                <th>Unlimited +</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Custom domains</td>
-                                <td>1</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                            </tr>
-                            <tr>
-                                <td>Subdomains</td>
-                                <td>5</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                            </tr>
-                            <tr>
-                                <td>Websites</td>
-                                <td>5</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                            </tr>
-                            <tr>
-                                <td>Landing pages</td>
-                                <td>5</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                            </tr>
-                            <tr>
-                                <td>Leads limit</td>
-                                <td>5</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                            </tr>
-                            <tr>
-                                <td>Email automations</td>
-                                <td>5</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                            </tr>
-                            <tr>
-                                <td>500+ templates</td>
-                                <td>5</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                            </tr>
-                            <tr>
-                                <td>Share my funnel</td>
-                                <td>5</td>
-                                <td>Unlimited</td>
-                                <td>Unlimited</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div className="table-responsive">
+                        <table className="table">
+                            <thead>
+                                <tr>
+                                    <th>Main features</th>
+                                    <th>Essential</th>
+                                    <th>Unlimited</th>
+                                    <th>Unlimited +</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Custom domains</td>
+                                    <td>1</td>
+                                    <td>Unlimited</td>
+                                    <td>Unlimited</td>
+                                </tr>
+                                <tr>
+                                    <td>Subdomains</td>
+                                    <td>5</td>
+                                    <td>Unlimited</td>
+                                    <td>Unlimited</td>
+                                </tr>
+                                <tr>
+                                    <td>Websites</td>
+                                    <td>5</td>
+                                    <td>Unlimited</td>
+                                    <td>Unlimited</td>
+                                </tr>
+                                <tr>
+                                    <td>Landing pages</td>
+                                    <td>5</td>
+                                    <td>Unlimited</td>
+                                    <td>Unlimited</td>
+                                </tr>
+                                <tr>
+                                    <td>Leads limit</td>
+                                    <td>5</td>
+                                    <td>Unlimited</td>
+                                    <td>Unlimited</td>
+                                </tr>
+                                <tr>
+                                    <td>Email automations</td>
+                                    <td>5</td>
+                                    <td>Unlimited</td>
+                                    <td>Unlimited</td>
+                                </tr>
+                                <tr>
+                                    <td>500+ templates</td>
+                                    <td>5</td>
+                                    <td>Unlimited</td>
+                                    <td>Unlimited</td>
+                                </tr>
+                                <tr>
+                                    <td>Share my funnel</td>
+                                    <td>5</td>
+                                    <td>Unlimited</td>
+                                    <td>Unlimited</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                 </div>
             </div>

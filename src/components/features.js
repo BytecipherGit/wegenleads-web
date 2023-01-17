@@ -179,27 +179,27 @@ export const FeaturesView = () => {
                 <div className="container-fluid">
                     <h2>Phonesites integrates with 1000+ <span>of your favorite tools.</span></h2>
                     <div className="row m-auto">
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo1} alt="Dl Logo" />
                             <h4>Use On Any Device</h4>
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo2} alt="Dl Logo" />
                             <h4>Use On Any Device</h4>
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo3} alt="Dl Logo" />
                             <h4>Use On Any Device</h4>
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo4} alt="Dl Logo" />
                             <h4>Use On Any Device</h4>
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo5} alt="Dl Logo" />
                             <h4>Use On Any Device</h4>
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo6} alt="Dl Logo" />
                             <h4>Use On Any Device</h4>
                         </div>

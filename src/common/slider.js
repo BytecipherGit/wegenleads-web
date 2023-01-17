@@ -13,7 +13,7 @@ const responsiveCenterModer = {
         paritialVisibilityGutter: 50
     },
     mobile: {
-        breakpoint: { max: 767, min: 0 },
+        breakpoint: { max: 767, min: 320 },
         items: 1,
         paritialVisibilityGutter: 30
     }

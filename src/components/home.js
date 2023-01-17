@@ -80,22 +80,22 @@ export const HomeView = () => {
                 <div className="container-fluid">
                     <p>184,298+ websites are powered by Phonesites</p>
                     <div className="row col-md-9 m-auto">
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo1} alt='Logo 1' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo2} alt='Logo 2' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo3} alt='Logo 3' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo4} alt='Logo 4' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo5} alt='Logo 5' />
                         </div>
-                        <div className="col-md-2 col-sm-4 col-6">
+                        <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo6} alt='Logo 6' />
                         </div>
                     </div>
@@ -307,40 +307,40 @@ export const HomeView = () => {
             <div className="favorite-tools">
                 <div className="container-fluid">
                     <h2>Phonesites integrates with 1000+ <span>of your favorite tools.</span></h2>
-                    <div className="row col-lg-8 col-md- m-auto">
-                        <div className="col-sm-4 col-md-2">
+                    <div className="row col-lg-8 m-auto">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo1} alt="Dl Logo" />
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo2} alt="Dl Logo" />
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo3} alt="Dl Logo" />
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo4} alt="Dl Logo" />
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo5} alt="Dl Logo" />
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo6} alt="Dl Logo" />
                         </div>
                     </div>
-                    <div className="row col-lg-8 col-md- m-auto justify-content-center pt-5">
-                        <div className="col-sm-4 col-md-2">
+                    <div className="row col-lg-8 m-auto justify-content-center pt-5">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo7} alt="Dl Logo" />
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo8} alt="Dl Logo" />
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo9} alt="Dl Logo" />
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo10} alt="Dl Logo" />
                         </div>
-                        <div className="col-sm-4 col-md-2">
+                        <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo11} alt="Dl Logo" />
                         </div>
                     </div>

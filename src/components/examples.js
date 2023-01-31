@@ -685,7 +685,7 @@ export const ExamplesView = () => {
                 <div className="container-fluid">
                     <div className="m-auto footdetails">
                         <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
-                        <h2>See how PAVE completes50,000 inspectionsevery month</h2>
+                        <h2>See how Wegenleads completes 50,000 inspections every month</h2>
                         <button className="button-Effect cursor-pointer" onClick={() => navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                         <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                     </div>

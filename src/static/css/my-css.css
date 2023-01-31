@@ -1366,7 +1366,7 @@ footer { padding: 75px 0;}
 }
 .cussliimgtop {
   position: absolute;
-  top: 15%;
+  top: 25%;
 }
 .cussliimgbotom{
   position: absolute;
@@ -1374,13 +1374,15 @@ footer { padding: 75px 0;}
 }
 .cussliimgtopRight{
   position: absolute;
-  top: 15%;
+  top: 24%;
   right: 0;
+  width: 4%;
 }
 .cussliimgbotomRight{
   position: absolute;
   bottom:-11px;
   right: 0;
+  width: 9%;
 }
 .aboutimgeffect {
   margin: -50px 0 0;
@@ -1464,11 +1466,25 @@ footer { padding: 75px 0;}
   letter-spacing: -0.462554px;
   color: rgba(16, 57, 59, 0.69);
 }
+@media (max-width:1600px){
+.aboutcussldr .featurerightimg {bottom: 6%; left: -32%;}
+.cussliimgbotomRight {bottom: 0px; right: 0; width: 9%;}
+.aboutcussldr h1 {padding-left: 65px;}
+.cussliimgtopRight {top: 20%;}
+.cussliimgtop {top: 21%;}
+}
+
+@media (max-width:1440px){
+.aboutcussldr .featurerightimg {bottom: 1%; left: -36%;}
+.cussliimgbotomRight { width: 7%;}
+}
 
 @media (max-width:1366px){
-.aboutcussldr h1 {padding-left: 65px;}
 .aboutIdea .aboutIdeaImgpossion {left: -62px;}
 img.imgwidth { width: 100%;}
+}
+@media (max-width:1280px){
+.aboutcussldr .featurerightimg {bottom: 7%; left: -17%; width: 60%;}
 }
 
 @media (max-width:1199px){
@@ -1507,11 +1523,19 @@ img.imgwidth { width: 100%;}
 }
 .sliexmple .cussliimgtop {
   position: absolute;
-  top: 15%;
+  top: 25%;
 }
 .sliexmple .cussliimgbotom{
   position: absolute;
   bottom:8%;
+}
+
+.cutfeaturesli h1 {
+  padding-right: 100px;
+}
+
+@media (max-width:1600px){
+.cutfeaturesli h1 {padding-right: 74px;}
 }
 @media (max-width:1366px){
 .sliexmple .cussliimgbotom { bottom: 4%;}
@@ -1520,6 +1544,7 @@ img.imgwidth { width: 100%;}
 @media (max-width:1280px){
 .sliexmple .cussliimgbotom { bottom: 1%;}
 .sliexmple .cussliimgtop { top: 28%;}
+.cutfeaturesli h1 {padding-right:0;}
 }
 @media (max-width:1024px){
 .sliexmple h1 {padding-left: 70px;}
@@ -1847,6 +1872,9 @@ border-top-right-radius: 15px;
 @media (max-width:1024px){
 .template-filter .template-container .product-container {width: 30% !important;}
 .template-filter {margin: 0 0 50px 0;}
+}
+@media (max-width:812px){
+.example-filter p {font-size: 20px; line-height: 28px;}
 }
 @media (max-width:812px){
 .template-filter .template-container .product-container {width: 46% !important;}

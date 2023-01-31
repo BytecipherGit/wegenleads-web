@@ -104,21 +104,21 @@ export const FeaturesView = () => {
                         <div className="col-lg-4">
                             <div className="trainingDesign">
                                 <img src={NotificationIcon} alt="Note" />
-                                <h2>Automated emails</h2>
+                                <h2>Automated Emails</h2>
                                 <p>Write, schedule, and send follow-ups automatically when someone submits a form.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="trainingDesign">
                                 <img src={NotesIcon} alt="Note" />
-                                <h2>Lead notifications</h2>
+                                <h2>Lead Notifications</h2>
                                 <p>Any time a new lead comes in, Wegenleads will send a notification a new prospect has shown interest.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="trainingDesign">
                                 <img src={DuttIcon} alt="Note" />
-                                <h2>Sync-leadst</h2>
+                                <h2>Sync-Leads</h2>
                                 <p>Integrate it with any CRM, email software, google sheets, more!</p>
                             </div>
                         </div>

@@ -126,8 +126,8 @@ export const PricingView = () => {
                     </div>
                     <div className="col-xl-8 col-lg-10 col-md-11 m-auto pricihead">
                         <h1>Need a custom plan for your team?</h1>
-                        <p>Wegenleads is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
-                        <button className="ActiveButton button-Effect">Contact Us</button>
+                        <p>Have a larger team with specific needs? We’re up for negotiation. Let’s get on a call and see what we can do.</p>
+                        <button className="ActiveButton button-Effect cursor-pointer" onClick={() => navigate("/not-found")}>Contact Us</button>
                     </div>
                 </div>
             </div>

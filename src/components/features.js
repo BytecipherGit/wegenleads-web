@@ -130,7 +130,7 @@ export const FeaturesView = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-5 cusServisDetsils  align-self-center">
-                            <h2>Training and world-class support</h2>
+                            <h2 className="mobileTraining">Training and world-class support</h2>
                             <p>Work on files together in real-time, and review and get feedback without the back and forth.</p>
                             <ul>
                                 <li><img src={BulletIcon} alt="Bullet Icon" /> Produce more ads without spending more time</li>

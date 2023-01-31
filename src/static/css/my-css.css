@@ -479,6 +479,7 @@ header .navbar-brand img {width: 170px;}
 }
 @media (max-width:767px){
 .cusServis .cusServisDetsils h2 { font-size: 20px;  line-height: 28px;}
+.cusServis .cusServisDetsils .mobileTraining{margin-top: 80px;}
 .cusServis .cusServisDetsils p {font-size: 16px; line-height: 24px; margin: 0 0 46px;}
 .cusServis {margin: 0 0 80px !important;}
 .cusServis .cusServisDetsils ul li {font-size: 14px; line-height: 20px;  margin: 0 0 15px;}
@@ -726,6 +727,11 @@ header .navbar-brand img {width: 170px;}
 .favorite-tools .trainingDesign img {
   margin-top: -100px;
 }
+@media (max-width:1280px){
+.favorite-tools img {
+  width: inherit;
+}
+}
 @media (max-width:991px){
 .favorite-tools img {width: 100%;}
 }
@@ -869,6 +875,10 @@ footer {
   background: #fec85b;
   padding: 70px 0;
   font-family: "Axiforma", sans-serif !important;
+}
+footer .footlogo {
+  margin: 0;
+  padding: 0;
 }
 footer .footlogo img {
   width: 100%;
@@ -1172,7 +1182,9 @@ footer { padding: 75px 0;}
   margin: 0 0 55px;
   text-align: center;
 }
-
+.tablepriciView .table {
+  white-space: nowrap;
+}
 .tablepriciView th {
   font-weight: 600;
   font-size: 24px;
@@ -1189,6 +1201,7 @@ footer { padding: 75px 0;}
 .tablepriciView .table thead th {
   vertical-align: middle;
   border-bottom: 0 solid #dee2e6;
+  text-align: center;
 }
 
 .tablepriciView .table thead th:first-child {
@@ -1197,14 +1210,24 @@ footer { padding: 75px 0;}
 }
 
 .tablepriciView .table thead th:last-child {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  -moz-border-bottom-right-radius: 15px;
+  -moz-border-top-right-radius: 15px;
+  /* text-align: end; */
+}
+.tablepriciView .table td:last-child {
+  /* text-align: end; */
+}
+.tablepriciView .table thead th:first-child, .tablepriciView .table td:first-child{
+  text-align: left;
 }
 
 .tablepriciView .table td {
   padding: 30px 44px;
   vertical-align: middle;
   border-top: 0 solid #dee2e6;
+  text-align: center;
 }
 
 .tablepriciView .table th {
@@ -1966,6 +1989,9 @@ border-top-right-radius: 15px;
   position: absolute;
   right: 0;
   bottom: 20%;
+}
+@media (max-width:991px){
+.loginrightimg, .rightvctimg, .leftvctimg, .loginGraphimg, .loginbottomimg{display: none;}
 }
 /****-------====== Login Css End =======-----***/
 

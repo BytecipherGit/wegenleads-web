@@ -55,7 +55,7 @@ export const FeaturesView = () => {
                 <div className="container-fluid">
                     <div className="col-xl-7 col-lg-8 col-md-10 m-auto slidehead">
                         <h1>Proprietary mobile builder</h1>
-                        <p>Phonesites is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
+                        <p>Wegenleads is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
                     </div>
                 </div>
                 <div className="sliderdiv">
@@ -112,7 +112,7 @@ export const FeaturesView = () => {
                             <div className="trainingDesign">
                                 <img src={NotesIcon} alt="Note" />
                                 <h2>Lead notifications</h2>
-                                <p>Any time a new lead comes in, Phonesites will send a notification a new prospect has shown interest.</p>
+                                <p>Any time a new lead comes in, Wegenleads will send a notification a new prospect has shown interest.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -177,7 +177,7 @@ export const FeaturesView = () => {
 
             <div className="favorite-tools featuretools">
                 <div className="container-fluid">
-                    <h2>Phonesites integrates with 1000+ <span>of your favorite tools.</span></h2>
+                    <h2>Wegenleads integrates with 1000+ <span>of your favorite tools.</span></h2>
                     <div className="row m-auto">
                         <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo1} alt="Dl Logo" />
@@ -213,7 +213,7 @@ export const FeaturesView = () => {
                 <div className="container-fluid">
                     <div className="m-auto footdetails">
                         <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
-                        <h2>See how PAVE completes50,000 inspectionsevery month</h2>
+                        <h2>See how Wegenleads completes 50,000 inspections every month</h2>
                         <button className="button-Effect cursor-pointer" onClick={()=>navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                         <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                     </div>

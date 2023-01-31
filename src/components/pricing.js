@@ -126,7 +126,7 @@ export const PricingView = () => {
                     </div>
                     <div className="col-xl-8 col-lg-10 col-md-11 m-auto pricihead">
                         <h1>Need a custom plan for your team?</h1>
-                        <p>Phonesites is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
+                        <p>Wegenleads is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
                         <button className="ActiveButton button-Effect">Contact Us</button>
                     </div>
                 </div>
@@ -134,7 +134,7 @@ export const PricingView = () => {
 
             <div className="clientprt">
                 <div className="container-fluid">
-                    <p>184,298+ websites are powered by Phonesites</p>
+                    <p>184,298+ websites are powered by Wegenleads</p>
                     <div className="row col-md-9 m-auto">
                         <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo1} alt='Logo 1' />
@@ -162,7 +162,7 @@ export const PricingView = () => {
                 <div className="container-fluid">
                     <div className="col-xl-8 col-lg-10 col-md-11 m-auto">
                         <h1>Choose the right plan for your business</h1>
-                        <p>Phonesites is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
+                        <p>Wegenleads is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
                     </div>
                     <div className="table-responsive">
                         <table className="table">
@@ -355,7 +355,7 @@ export const PricingView = () => {
                                 </div>
                                 <div className="col-md-6">
                                     <AccordionContentView
-                                        title={"What are Phonesites Coaches?"}
+                                        title={"What are Wegenleads Coaches?"}
                                         index={6}
                                         activeIndex={activeIndex}
                                         setActiveIndex={setActiveIndex}
@@ -416,7 +416,7 @@ export const PricingView = () => {
                     <div className="">
                         <div className="m-auto footdetails">
                             <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
-                            <h2>See how PAVE completes50,000 inspectionsevery month</h2>
+                            <h2>See how Wegenleads completes 50,000 inspections every month</h2>
                             <button className="button-Effect cursor-pointer" onClick={() => navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                             <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                         </div>

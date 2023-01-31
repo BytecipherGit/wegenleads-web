@@ -67,7 +67,7 @@ export const HomeView = () => {
                                     <input type="text" name="" placeholder="your@email.com" />
                                     <button className="ActiveButton button-Effect " type="button"> Get Started Free</button>
                                 </div>
-                                <label>Try Phonesites free for 14 days.</label>
+                                <label>Try Wegenleads free for 14 days.</label>
                             </form>
                         </div>
                         <div className="col-md-7 align-self-center">
@@ -78,7 +78,7 @@ export const HomeView = () => {
             </div>
             <div className="clientprt">
                 <div className="container-fluid">
-                    <p>184,298+ websites are powered by Phonesites</p>
+                    <p>184,298+ websites are powered by Wegenleads</p>
                     <div className="row col-md-9 m-auto">
                         <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo1} alt='Logo 1' />
@@ -106,7 +106,7 @@ export const HomeView = () => {
                 <div className="container-fluid">
                     <div className="col-xl-7 col-lg-8 col-md-10 m-auto slidehead">
                         <h1>Features that get you leads</h1>
-                        <p>Phonesites is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
+                        <p>Wegenleads is the easiest and fastest way to start collecting leads. Create pages from your phone or desktop in minutes.</p>
                     </div>
                 </div>
                 <div className="sliderdiv">
@@ -210,13 +210,13 @@ export const HomeView = () => {
 
             <div className="training-support">
                 <div className="container-fluid">
-                    <h1>Training and world-className support</h1>
+                    <h1>Training and world-class support</h1>
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="trainingDesign">
                                 <img src={NotificationIcon} alt="Note" />
                                 <h2>Guided 1:1 orientation call</h2>
-                                <p>Schedule an orientation call with a coach from the dashboard. It's included as a Phonesites member.</p>
+                                <p>Schedule an orientation call with a coach from the dashboard. It's included as a Wegenleads member.</p>
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -306,7 +306,7 @@ export const HomeView = () => {
 
             <div className="favorite-tools">
                 <div className="container-fluid">
-                    <h2>Phonesites integrates with 1000+ <span>of your favorite tools.</span></h2>
+                    <h2>Wegenleads integrates with 1000+ <span>of your favorite tools.</span></h2>
                     <div className="row col-lg-8 m-auto">
                         <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo1} alt="Dl Logo" />
@@ -353,7 +353,7 @@ export const HomeView = () => {
                 <div className="container-fluid">
                     <div className="m-auto footdetails">
                         <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
-                        <h2>See how PAVE completes50,000 inspectionsevery month</h2>
+                        <h2>See how Wegenleads completes 50,000 inspections every month</h2>
                         <button className="button-Effect cursor-pointer" onClick={()=>navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                         <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                     </div>

@@ -49,7 +49,7 @@ export const AboutView = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-5 align-self-center">
-                            <h1>184,298+ websites are powered by Phonesites</h1>
+                            <h1>184,298+ websites are powered by Wegenleads</h1>
                         </div>
                         <div className="col-md-4 align-self-center">
                             <div className="featurerightmar">
@@ -64,7 +64,7 @@ export const AboutView = () => {
             </div>
             <div className="clientprt">
                 <div className="container-fluid">
-                    <p>184,298+ websites are powered by Phonesites</p>
+                    <p>184,298+ websites are powered by Wegenleads</p>
                     <div className="row col-md-9 m-auto">
                         <div className="col-md-2 col-sm-4 col-4">
                             <img src={ClientLgo1} alt='Logo 1' />
@@ -91,9 +91,9 @@ export const AboutView = () => {
                 <div className="container-fluid">
                     <img src={Vctimgimg4} alt="Vct" className="vctidealeft" />
                     <img src={Vctimgimg5} alt="Vct" className="vctidearight"  />
-                    <h1 className="col-xl-8 col-lg-10 m-auto">We built Phonesites to <span className="d-black">make launching your ideas</span> easy and fast</h1>
+                    <h1 className="col-xl-8 col-lg-10 m-auto">We built Wegenleads to <span className="d-black">make launching your ideas</span> easy and fast</h1>
                     <div className="col-xl-5 col-lg-7 col-md-8 m-auto">
-                        <p className="pragraph">Before starting Phonesites, we were frustrated by the solutions on the market. They were complicated, bulky, and required a desktop computer.We wanted to make launching our ideas and offers easy and fast. And we wanted to do it from any device, from anywhere.
+                        <p className="pragraph">Before starting Wegenleads, we were frustrated by the solutions on the market. They were complicated, bulky, and required a desktop computer.We wanted to make launching our ideas and offers easy and fast. And we wanted to do it from any device, from anywhere.
                     </p>
                     </div>
                     <div className="row col-lg-8 m-auto">
@@ -108,19 +108,19 @@ export const AboutView = () => {
                                 <div className="col-md-4">
                                     <div className="ideaservices">
                                         <h4>52M+</h4>
-                                        <p>We built Phonesites to make launching your ideas easy and fast</p>
+                                        <p>We built Wegenleads to make launching your ideas easy and fast</p>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="ideaservices">
                                         <h4>170K+</h4>
-                                        <p>We built Phonesites to make launching your ideas easy and fast</p>
+                                        <p>We built Wegenleads to make launching your ideas easy and fast</p>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="ideaservices">
                                         <h4>1.3M+</h4>
-                                        <p>We built Phonesites to make launching your ideas easy and fast</p>
+                                        <p>We built Wegenleads to make launching your ideas easy and fast</p>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@ export const AboutView = () => {
                             <div className="cusprofilebox">
                                 <img src={Vctimgimg4} alt="" />
                                 <div className="col-xl-6 col-lg-8 col-md-10">
-                                    <h6><i>“We built Phonesites to make launching your ideas easy and fast”</i></h6>
+                                    <h6><i>“We built Wegenleads to make launching your ideas easy and fast”</i></h6>
                                     <h4>James Borden- CEO</h4>
                                 </div>
                             </div>
@@ -175,13 +175,13 @@ export const AboutView = () => {
                     <div className="row justify-content-between">
                         <div className="col-md-5 cusServisDetsils  align-self-center">
                             <h2>We've helped 10k+ teams</h2>
-                            <p>Since 2018, Phonesites has worked to achieve the goals of its customers.‍We work with customers across several industries like auto, finance, real estate, insurance, home services, coaching, consulting, and more.</p>
+                            <p>Since 2018, Wegenleads has worked to achieve the goals of its customers.‍We work with customers across several industries like auto, finance, real estate, insurance, home services, coaching, consulting, and more.</p>
 
                             {/* <button className="ActiveButton">View All Features</button> */}
                             <div className="cusprofilebox">
                                 <img src={Vctimgimg4} alt="" />
                                 <div className="col-xl-6 col-lg-8 col-md-10">
-                                    <h6><i>“We built Phonesites to make launching your ideas easy and fast”</i></h6>
+                                    <h6><i>“We built Wegenleads to make launching your ideas easy and fast”</i></h6>
                                     <h4>James Borden- CEO</h4>
                                 </div>
                             </div>
@@ -195,7 +195,7 @@ export const AboutView = () => {
             </div>
             <div className="favorite-tools aboutleadership">
                 <div className="container-fluid">
-                    <h2>Leadership at Phonesites</h2>
+                    <h2>Leadership at Wegenleads</h2>
 
                     <div className="">
                         <div className="row m-auto pb-5">
@@ -242,7 +242,7 @@ export const AboutView = () => {
                 <div className="container-fluid">
                     <div className="m-auto footdetails">
                         <img src={Vctimgimg1} alt="Vct" className="vctimgpo1" />
-                        <h2>See how PAVE completes50,000 inspectionsevery month</h2>
+                        <h2>See how Wegenleads completes 50,000 inspections every month</h2>
                         <button className="button-Effect cursor-pointer" onClick={() => navigate("/get-started")}>GET STARTED NOW <img src={RightArrow} alt="" /> </button>
                         <img src={Vctimgimg2} alt="Vct" className="vctimgpo2" />
                     </div>

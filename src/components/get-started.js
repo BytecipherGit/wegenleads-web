@@ -86,7 +86,7 @@ export const GetStartedView = () => {
                                                 </div>
                                             </div>
                                             <div className="testimonial-quote ">
-                                                <p>“In the last 5 weeks I've been able to generate over 524 highly qualified leads with Phonesites. I use it for several different types businesses, and it works with them all of them. The ROI for me was 1,000% or more.”
+                                                <p>“In the last 5 weeks I've been able to generate over 524 highly qualified leads with Wegenleads. I use it for several different types businesses, and it works with them all of them. The ROI for me was 1,000% or more.”
                                                 </p>
                                                 <div className="testimonial-quote-author">
                                                     <div className="row">
@@ -137,7 +137,7 @@ export const GetStartedView = () => {
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                 </AccordionContentView>
                                                 <AccordionContentView
-                                                    title={"How does the Phonesites Coaching work?"}
+                                                    title={"How does the Wegenleads Coaching work?"}
                                                     index={5}
                                                     activeIndex={activeIndex}
                                                     setActiveIndex={setActiveIndex}

@@ -307,7 +307,7 @@ export const HomeView = () => {
             <div className="favorite-tools">
                 <div className="container-fluid">
                     <h2>Wegenleads integrates with 1000+ <span>of your favorite tools.</span></h2>
-                    <div className="row col-lg-8 m-auto">
+                    <div className="row col-xl-8 col-lg-10 m-auto">
                         <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo1} alt="Dl Logo" />
                         </div>
@@ -327,7 +327,7 @@ export const HomeView = () => {
                             <img src={DlLogo6} alt="Dl Logo" />
                         </div>
                     </div>
-                    <div className="row col-lg-8 m-auto justify-content-center pt-5">
+                    <div className="row col-xl-8 col-lg-10 m-auto justify-content-center pt-5">
                         <div className="col-md-2 col-sm-2 col-4">
                             <img src={DlLogo7} alt="Dl Logo" />
                         </div>

@@ -2176,6 +2176,7 @@ border-top-right-radius: 15px;
   font-weight: 500;
   font-size: 20px;
   line-height: 38px;
+  text-align: left;
 }
 
 .get-started-faq .accordion-content {

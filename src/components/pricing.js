@@ -60,10 +60,10 @@ export const PricingView = () => {
             <div className="planpricign">
                 <div className="container-fluid">
                     <div className="chetoggle">
-                        <span>Monthly</span>
+                        <span className={switchActive && "yearclr"}>Monthly</span>
                         <input type="checkbox" id="checkbox1" onChange={() => setSwitchActive(!switchActive)} />
                         <label htmlFor="checkbox1"></label>
-                        <span className="yearclr">Yearly</span>
+                        <span className={!switchActive && "yearclr"}>Yearly</span>
                     </div>
                     <div className="row col-xl-10 col-lg-12 m-auto">
                         <div className="col-md-4">
@@ -89,7 +89,7 @@ export const PricingView = () => {
                                 <h1>{switchActive ? "$720" : "$60"} <span>/ {switchActive ? "Year" : "Month"}</span></h1>
                                 <div className="rangesli">
                                     {/* <img src={RangeSliderImg} alt="Range Slider" /> */}
-                                    <RangeSlider style={{"--value":"50", "--min":"0", "--max":"100"}} min={0} max={100} variant="primary" tooltip="off" onChange={(e) => { onChangeFunction(e) }}/>
+                                    <RangeSlider style={{ "--value": "50", "--min": "0", "--max": "100" }} min={0} max={100} variant="primary" tooltip="off" onChange={(e) => { onChangeFunction(e) }} />
 
                                     <h6>{switchActive ? "$60,000" : "$5,000"} volume per {switchActive ? "year" : "month"}</h6>
                                 </div>
@@ -109,7 +109,7 @@ export const PricingView = () => {
                         <div className="col-md-4">
                             <div className="pricingboxDs">
                                 <h4>Unlimited +</h4>
-                                <h1>$0 <span>/ {switchActive ? "Year" : "Month"}</span></h1>
+                                <h1>$0 <span >/ {switchActive ? "Year" : "Month"}</span></h1>
                                 <p>Flexible pricing without monthly fees and a 5% fee per transaction.</p>
                                 <ul>
                                     <li><img src={CloseSquare} alt="Close Square" /> 5% fee per transaction*</li>
